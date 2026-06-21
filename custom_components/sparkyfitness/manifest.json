@@ -1,12 +1,12 @@
 {
   "domain": "sparkyfitness",
   "name": "SparkyFitness",
-  "codeowners": ["@marco"],
+  "codeowners": ["@mcschnei"],
   "config_flow": true,
-  "documentation": "https://github.com/marco/sparkyfitness-homeassistant",
+  "documentation": "https://github.com/YOURUSER/sparkyfitness-homeassistant",
   "integration_type": "service",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/marco/sparkyfitness-homeassistant/issues",
+  "issue_tracker": "https://github.com/YOURUSER/sparkyfitness-homeassistant/issues",
   "requirements": [],
   "version": "1.2.0"
 }
