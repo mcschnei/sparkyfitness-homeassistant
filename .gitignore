@@ -13,3 +13,6 @@ Thumbs.db
 
 # Obsidian (in case this folder is opened inside a vault)
 .obsidian/
+
+# Personal Obsidian note (kept local, not part of the public repo)
+SparkyFitness HA Integration.md
