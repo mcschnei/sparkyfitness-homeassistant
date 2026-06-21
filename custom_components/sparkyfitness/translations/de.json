@@ -1,0 +1,64 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "SparkyFitness",
+        "description": "Verbinde Home Assistant mit deiner selbst gehosteten SparkyFitness-Instanz. Erstelle in SparkyFitness unter Einstellungen einen API-Key und gib ihn unten ein.",
+        "data": {
+          "url": "Basis-URL",
+          "api_key": "API-Key"
+        },
+        "data_description": {
+          "url": "Vollständige URL zu deinem SparkyFitness-Server oder -Frontend, z. B. http://192.168.1.10:3004",
+          "api_key": "Ein in SparkyFitness erzeugter API-Key (mit Leserechten für Gesundheitsdaten)"
+        }
+      },
+      "reauth_confirm": {
+        "title": "SparkyFitness neu authentifizieren",
+        "description": "Der gespeicherte API-Key ist nicht mehr gültig. Bitte einen neuen eingeben.",
+        "data": {
+          "api_key": "API-Key"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen. Prüfe, ob die URL von Home Assistant aus erreichbar ist.",
+      "invalid_auth": "Ungültiger API-Key oder fehlende Berechtigung.",
+      "invalid_url": "Gib eine vollständige URL inklusive http:// oder https:// ein"
+    },
+    "abort": {
+      "already_configured": "Diese SparkyFitness-Instanz ist bereits konfiguriert.",
+      "reauth_successful": "Neu-Authentifizierung erfolgreich."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "SparkyFitness-Optionen",
+        "data": {
+          "scan_interval": "Abrufintervall (Minuten)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "eaten": { "name": "Kalorien gegessen" },
+      "burned": { "name": "Kalorien verbrannt" },
+      "remaining": { "name": "Kalorien übrig" },
+      "steps": { "name": "Schritte" },
+      "sleep_duration": { "name": "Schlafdauer" },
+      "sleep_asleep": { "name": "Schlafzeit" },
+      "sleep_score": { "name": "Schlaf-Score" },
+      "sleep_deep": { "name": "Tiefschlaf" },
+      "sleep_light": { "name": "Leichtschlaf" },
+      "sleep_rem": { "name": "REM-Schlaf" },
+      "sleep_awake": { "name": "Wachzeit" },
+      "sleep_bedtime": { "name": "Schlafenszeit" },
+      "sleep_waketime": { "name": "Aufwachzeit" },
+      "sleep_resting_hr": { "name": "Ruhepuls" },
+      "weight": { "name": "Gewicht" },
+      "body_fat": { "name": "Körperfett" }
+    }
+  }
+}
