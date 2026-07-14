@@ -17,6 +17,10 @@ jobs:
         uses: hacs/action@main
         with:
           category: integration
+          # 'brands' only matters for inclusion in the default HACS store, not
+          # for installing this as a custom repository. Remove this once the
+          # domain is added to home-assistant/brands.
+          ignore: brands
 
   hassfest:
     name: Hassfest validation
